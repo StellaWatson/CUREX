@@ -4,10 +4,12 @@
   display: flex;
   align-items: center;
   /* justify-content: space-around; */
-  /* background: url('./image/h2.jpg');
+  background: url('./image/story-bg.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; */
+  background-size: contain;
+  background-position-x: -150px;
+  background-position-y: 70px;
+
 }
 .about-info,
 .about-video {
@@ -73,6 +75,13 @@
   }
   .about-info{
     margin-left: 0px;
+  }
+}
+
+@media screen and (max-width:840px){
+  #about-section{
+    background-position-x: -180px;
+    background-position-y:230px;
   }
 }
 
