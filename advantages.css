@@ -1,0 +1,98 @@
+/* --- Advantages Section --- */
+
+.advantages-section {
+    width: 100%;
+    background-color: white;
+    padding: 3rem;
+
+}
+.advantages-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.advantages-section h2 {
+  text-align: start;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: var(--secondary-color);
+}
+
+/* Cards container */
+.advantages-section .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 15px;
+}
+
+/* Each card */
+.advantages-section .card {
+  background-color: #F5F9FF;
+  padding: 30px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  
+  backdrop-filter: blur(4px);
+}
+
+/* Icon */
+.advantages-section .card .icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 20px;
+  background: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--background-color);
+  box-shadow: 0 0 10px var(--shadow-color);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Title */
+.advantages-section .card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-top: 30px;
+}
+
+/* Text */
+.advantages-section .card p {
+  font-size: 0.95rem;
+  line-height: 1.45rem;
+  color: var(--text-color);
+  margin-bottom: 80px;
+}
+
+/* ---- MEDIA QUERIES ---- */
+
+@media (max-width: 992px) {
+  .advantages-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .advantages-section .cards {
+    grid-template-columns: 1fr;
+  }
+  .advantages-section .card {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .advantages-section h2 {
+    font-size: 1.7rem;
+  }
+  .advantages-section .card .icon {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+}

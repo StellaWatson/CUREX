@@ -11,3 +11,21 @@
 a{
     text-decoration: none;
 }
+:root {
+  /* Основные цвета */
+  --primary-color: #1CBDDE;
+  --secondary-color: #152B55;
+  --text-color: #152B55;
+  --background-color: #ffffff;
+    --bg-hover-color: #00426B;
+  /* Дополнительные акценты */
+  --accent-color: #1CBDDE;
+  --hover-color: #128ea8;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+
+  /* Светлые/тёмные варианты */
+  --light-bg: #f9f9f9;
+  --dark-bg: #0f1e3a;
+  --border-color: #e0e0e0;
+  
+}

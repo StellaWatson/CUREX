@@ -1,12 +1,12 @@
 #doctors_section{
     width: 100%;
-    margin: 10rem auto; 
-    background: rgb(249,250,252);
+    margin: 1rem auto; 
+    background: #F9FAFC;
     backdrop-filter: blur(10px);
 }
 .doctors_container{
     width: 80%;
-    margin: 10rem auto;
+    margin: 1rem auto;
     padding-top: 2.5rem;
 }
 .main_info{

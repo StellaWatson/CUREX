@@ -13,17 +13,19 @@
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="services.css">
     <link rel="stylesheet" href="doctors.css">
+    <link rel="stylesheet" href="advantages.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body style="background-color: #f5f9ff;;">
     <!-- header section  -->
     <header id="header">
         <div class="header_container">
-            <div class="logo ">
-                <h1><a href="">CURE<span>X</span></a></h1>
+            <div class="logo">
+                <h1><a href="#">CURE<span>X</span></a></h1>
             </div>
             <div class="header_nav">
                 <nav class="nav">
@@ -71,7 +73,7 @@
                     <div class="item">
                         <img src="image/bg1.jpeg">
                         <div class="content">
-                            <div class="author">CUREX</div>
+                            <div class="author">CURE<span>X</span></div>
                             <div class="title">Healthy Future</div>
                             <div class="topic">Smart Care Starts with <br>CureX</div>
                             <div class="des">
@@ -91,7 +93,7 @@
                     <div class="item">
                         <img src="image/bg2.jpeg">
                         <div class="content">
-                            <div class="author">CUREX</div>
+                            <div class="author">CURE<span>X</span></div>
                             <div class="title">Specific Care</div>
                             <div class="topic">Care Made for You — Down to <br>the DNA</div>
                             <div class="des">
@@ -108,7 +110,7 @@
                     <div class="item">
                         <img src="image/bg3.jpeg">
                         <div class="content">
-                            <div class="author">CUREX</div>
+                            <div class="author">CURE<span>X</span></div>
                             <div class="title">Easy Access</div>
                             <div class="topic">Healthcare at Your <br> Fingertips</div>
                             <div class="des">
@@ -125,7 +127,7 @@
                     <div class="item">
                         <img src="image/bg4.jpeg">
                         <div class="content">
-                            <div class="author">CUREX</div>
+                            <div class="author">CURE<span>X</span></div>
                             <div class="title">Precise Results</div>
                             <div class="topic">Clear answers from expert <br>testing.</div>
                             <div class="des">
@@ -189,11 +191,12 @@
                 </div>
                 <!-- next prev -->
 
-                <div class="arrows">
+                <!-- <div class="arrows">
                     <button id="prev">
                         < </button>
+                        < </button>
                             <button id="next">></button>
-                </div>
+                </div> -->
                 <!-- time running -->
                 <div class="time"></div>
             </div>
@@ -202,7 +205,6 @@
 
 
     <!-- About Section -->
-
     <section id="about-section" class="about-section">
 
         <div class="about-info">
@@ -219,9 +221,9 @@
 
         <div class="about-video">
             <video autoplay muted loop playsinline height="370px">
-                <source src="./image/about.mp4" type="video/mp4" >
-                
-            </video> 
+                <source src="./image/about.mp4" type="video/mp4">
+
+            </video>
         </div>
 
 
@@ -230,6 +232,115 @@
 
     <!-- About Section end -->
 
+
+
+
+
+
+    <!-- Services Section -->
+
+    <section id="services-section" class="services-section">
+        <h1 class="services-title">Our Services</h1>
+
+        <div class="service-cards">
+            <a href="#booking" class="service-card">
+                <span class="card-logo"><i class="fa-solid fa-truck-medical"></i></span>
+                <h3 class="service-card__name">Online Booking</h3>
+            </a>
+
+            <a href="#consultations" class="service-card">
+                <span class="card-logo"><i class="fa-solid fa-comment-medical"></i></span>
+                <h3 class="service-card__name">Advice</h3>
+            </a>
+
+            <a href="#records" class="service-card">
+                <span class="card-logo"><i class="fa-solid fa-file-shield"></i></span>
+                <h3 class="service-card__name">Medical prescription </h3>
+            </a>
+
+            <a href="#lab" class="service-card">
+                <span class="card-logo"><i class="fa-solid fa-flask-vial"></i></span>
+                <h3 class="service-card__name">Laboratoriya tahlillari</h3>
+            </a>
+
+            <a href="#pediatric" class="service-card">
+                <span class="card-logo"><i class="fa-solid fa-hands-holding-child"></i></span>
+                <h3 class="service-card__name">Child Care</h3>
+            </a>
+
+            <a href="#preventive" class="service-card">
+                <span class="card-logo"><i class="fa-solid fa-heart-pulse"></i></span>
+                <h3 class="service-card__name">Preventive programs</h3>
+            </a>
+
+            <a href="#emergency" class="service-card">
+                <span class="card-logo"><i class="fa-solid fa-kit-medical"></i></span>
+                <h3 class="service-card__name">Emergency assistance</h3>
+            </a>
+
+            <a href="#prescription" class="service-card">
+                <span class="card-logo"><i class="fa-solid fa-prescription-bottle-medical"></i></span>
+                <h3 class="service-card__name">Prescriptions</h3>
+            </a>
+
+            <a href="#ai" class="service-card">
+                <span class="card-logo"><i class="fa-solid fa-robot"></i></span>
+                <h3 class="service-card__name">AI assistance</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Bizni avzaliklarimoz -->
+
+    <section class="advantages-section">
+        <div class="advantages-container">
+            <h2>CureX Advantages</h2>
+    
+            <div class="cards">
+    
+                <div class="card">
+                    <div class="icon">✓</div>
+                    <h3>Queue-free service</h3>
+                    <p>All services at CureX are carried out through online pre-registration. Convenient diagnostics without waiting in line.</p>
+                </div>
+    
+                <div class="card">
+                    <div class="icon">ID</div>
+                    <h3>Personal ID Bracelet</h3>
+                    <p>Each patient receives an individual ID bracelet. It speeds up processes and keeps all your information organized.</p>
+                </div>
+    
+                <div class="card">
+                    <div class="icon">📄</div>
+                    <h3>Electronic Medical Card</h3>
+                    <p>Analysis and check-up results are automatically uploaded to your electronic card. Always accessible.</p>
+                </div>
+    
+                <div class="card">
+                    <div class="icon">📊</div>
+                    <h3>CureX Dashboard</h3>
+                    <p>Track your body temperature, pulse, glucose, weight, sleep quality, and other indicators in real time.</p>
+                </div>
+    
+                <div class="card">
+                    <div class="icon">⚗️</div>
+                    <h3>Fast and Accurate Tests</h3>
+                    <p>Modern laboratory equipment provides highly accurate results in a short time.</p>
+                </div>
+    
+                <div class="card">
+                    <div class="icon">📱</div>
+                    <h3>All Services in One Place</h3>
+                    <p>Consultations, tests, and recommendations are completed in just a few steps via the mobile app or website.</p>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+
+
+    </section>
     <!-- Doctors section  -->
 
     <section id="doctors_section">
@@ -267,7 +378,7 @@
                         <div class="button">
                             <button class="btn">
                                 <a href="#">View Profile</a>
-                                
+
                             </button>
                         </div>
                     </div>
@@ -301,11 +412,11 @@
                         <div class="button">
                             <button class="btn">
                                 <a href="#">View Profile</a>
-                                
+
                             </button>
                         </div>
                     </div>
-                    
+
 
                 </div>
                 <div class="list_items">
@@ -336,11 +447,11 @@
                         <div class="button">
                             <button class="btn">
                                 <a href="#">View Profile</a>
-                                
+
                             </button>
                         </div>
                     </div>
-                    
+
 
                 </div>
                 <div class="list_items">
@@ -371,104 +482,20 @@
                         <div class="button">
                             <button class="btn">
                                 <a href="#">View Profile</a>
-                                
+
                             </button>
                         </div>
                     </div>
-                    
+
 
                 </div>
             </div>
 
         </div>
     </section>
-     <!-- Doctors section  end -->
+    <!-- Doctors section  end -->
+    <!-- ----------- -->
 
-
-
-
-    <!-- Services Section -->
-    <!-- <section id="services-section" class="services-section">
-        <h1 class="services-title">Our Services</h1>
-
-
-        <div class="service-cards">
-            <div class="service-card">
-                <span class="card-logo"><i class="fa-solid fa-truck-medical"></i></span>
-                <h3 class="service-card__name">Online Booking</h3>
-                <p class="service-card__desc">Book doctors easily with real-time available slots. Find the right doctor
-                    and schedule visits in seconds — no waiting lines.
-                </p>
-                <button class="learn-more">Learn more <i class="fa-solid fa-circle-chevron-right"></i> </button>
-            </div>
-
-            <div class="service-card">
-                <span class="card-logo"><i class="fa-solid fa-comment-medical"></i></span>
-                <h3 class="service-card__name">Consultations</h3>
-                <p class="service-card__desc">Video / voice / chat with doctors from anywhere. Connect with certified
-                    specialists online for quick and convenient care.</p>
-                <button class="learn-more">Learn more</button>
-            </div>
-
-            <div class="service-card">
-                <span class="card-logo"><i class="fa-solid fa-file-shield"></i></span>
-                <h3 class="service-card__name">Smart Medical Records</h3>
-                <p class="service-card__desc">Safe and encrypted digital health storage. All your test results,
-                    prescriptions, and history in one secure place.</p>
-                <button class="learn-more">Learn more</button>
-            </div>
-
-            <div class="service-card">
-                <span class="card-logo"><i class="fa-solid fa-flask-vial"></i></span>
-                <h3 class="service-card__name">Laboratory Testing</h3>
-                <p class="service-card__desc">Blood tests, screening, diagnostics.Fast and accurate lab results to help
-                    you understand your health clearly</p>
-                <button class="learn-more">Learn more</button>
-            </div>
-
-            <div class="service-card">
-                <span class="card-logo"><i class="fa-solid fa-hands-holding-child"></i></span>
-                <h3 class="service-card__name">Pediatric Care </h3>
-                <p class="service-card__desc">Health services for children. We offer all of people trusted care for
-                    growing hearts and healthy futures.</p>
-                <button class="learn-more">Learn more</button>
-            </div>
-
-            <div class="service-card">
-                <span class="card-logo"><i class="fa-solid fa-heart-pulse"></i></span>
-                <h3 class="service-card__name">Preventive Programs</h3>
-                <p class="service-card__desc">Check-up packages, wellness tracking. Stay ahead of health issues with
-                    personalized preventive plans</p>
-                <button class="learn-more">Learn more</button>
-            </div>
-
-            <div class="service-card">
-                <span class="card-logo"><i class="fa-solid fa-kit-medical"></i></span>
-                <h3 class="service-card__name">Emergency Assistance</h3>
-                <p class="service-card__desc">Guidance for urgent medical needs. Immediate help and direction when every
-                    second matters</p>
-                <button class="learn-more">Learn more</button>
-            </div>
-
-            <div class="service-card">
-                <span class="card-logo"><i class="fa-solid fa-prescription-bottle-medical"></i></span>
-                <h3 class="service-card__name"> Prescription </h3>
-                <p class="service-card__desc">Digital prescriptions, reminder. Easy access to your prescriptions, every
-                    day we remind you — never miss a dose.</p>
-                <button class="learn-more">Learn more</button>
-            </div>
-
-            <div class="service-card">
-                <span class="card-logo"><i class="fa-solid fa-robot"></i></span>
-                <h3 class="service-card__name">AI Assistant</h3>
-                <p class="service-card__desc">Smart self-assessment tool that integrated with AI. Get guidance on
-                    symptoms and know when to seek medical care.</p>
-                <button class="learn-more">Learn more</button>
-            </div>
-        </div>
-    </section> -->
-
-    
     <!-- Services Section end -->
 
     <script src="banner.js"></script>

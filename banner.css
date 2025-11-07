@@ -37,8 +37,8 @@ header a{
 /* carousel */
 .carousel{
     height: 100vh;
-    margin-top: -30px;
-    width: 100vw;
+    margin-top: -50px;
+    width: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -87,8 +87,15 @@ header a{
 }
 
 
-.carousel .list .item .author{
+.carousel .list .item .author {
     font-weight: bold;
+    letter-spacing: 2px;
+}
+.carousel .list .item .author span{
+    color: rgb(3, 42, 3) ;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 1.5rem;
     letter-spacing: 10px;
     color: #1CBDDE;
 }

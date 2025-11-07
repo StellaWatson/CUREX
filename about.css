@@ -1,71 +1,65 @@
 #about-section {
-  width: 80% ;
+  width: 80%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 50px 0;
   display: flex;
   align-items: center;
   gap: 40px;
-  /* justify-content: space-around; */
-  /* background: url('./image/Abstract\ background\ with\ hexagons\ _\ Free\ Vector.jpeg'); */
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: -150px;
   background-position-y: 70px;
-
 }
 
 .about-info {
   width: 600px;
-  padding: 38px ;
+  padding: 38px;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   border-radius: 15px;
-  /* position: relative;
-  right: -10px; */
-  
-  
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-
+  box-shadow: 0 10px 25px var(--shadow-color);
 }
-.about-info__title{
+
+.about-info__title {
   font-size: 36px;
-  color:#152B55;
+  color: var(--secondary-color);
 }
 
-.about-info__description{
+.about-info__description {
   font-size: 14px;
   font-weight: 300;
-  
+  color: var(--text-color);
 }
 
-
-.about-action{
+.about-action {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #1CBDDE ;
-  color: rgb(255, 255, 255);
+  background-color: var(--primary-color);
+  color: #fff;
   margin-top: 20px;
   transition: box-shadow 0.8s;
 }
 
-.about-action:hover{
-  box-shadow: 0 0 20px #1CBDDE;
+.about-action:hover {
+  box-shadow: 0 0 20px var(--accent-color);
+  background-color: var(--hover-color);
 }
-.about-video{
+
+.about-video {
   width: 500px;
   height: 500px;
-
 }
+
 .about-video video {
-  width: 100% ;
+  width: 100%;
   height: 400px;
   margin-top: 2.5rem;
   object-fit: cover;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 25px var(--shadow-color);
   transition: transform 0.8s ease;
 }
 
@@ -73,19 +67,20 @@
   transform: scale(1.05);
 }
 
+/* 🔹 Адаптивка */
 @media screen and (max-width: 950px) {
-  .about-section {
+  #about-section {
     flex-direction: column;
   }
-  .about-info{
-    margin-left: 0px;
+
+  .about-info {
+    margin-left: 0;
   }
 }
 
-@media screen and (max-width:840px){
-  #about-section{
+@media screen and (max-width: 840px) {
+  #about-section {
     background-position-x: -180px;
-    background-position-y:230px;
+    background-position-y: 230px;
   }
 }
-
