@@ -9,7 +9,7 @@
 .item{
     position: relative;
 }
-img::after{
+/* img::after{
     content: "";
     position: absolute;
     top: 0;
@@ -19,7 +19,7 @@ img::after{
     background-color: #00000061; 
     backdrop-filter: blur(10px); 
     z-index: 2;
-}
+} */
 header{
     width: 1440px;
     max-width: 80%;

@@ -7,6 +7,10 @@
     <title>CureX</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="banner.css">
@@ -14,10 +18,9 @@
     <link rel="stylesheet" href="services.css">
     <link rel="stylesheet" href="doctors.css">
     <link rel="stylesheet" href="advantages.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="comments.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body style="background-color: #f5f9ff;;">
@@ -48,7 +51,8 @@
             </div>
             <div class="header_account">
                 <div class="icon">
-                    <i class="bi bi-person-fill"></i>
+                    <a href="#"><i class="bi bi-person-fill"></i></a>
+
                 </div>
 
                 <!-- <button class="btn sign_in">
@@ -86,7 +90,7 @@
                             </div>
                             <div class="buttons">
                                 <button>SEE MORE</button>
-                                <button>SUBSCRIBE</button>
+                                <button>Schedule</button>
                             </div>
                         </div>
                     </div>
@@ -103,7 +107,7 @@
                             </div>
                             <div class="buttons">
                                 <button>SEE MORE</button>
-                                <button>SUBSCRIBE</button>
+                                <button>Schedule</button>
                             </div>
                         </div>
                     </div>
@@ -120,7 +124,7 @@
                             </div>
                             <div class="buttons">
                                 <button>SEE MORE</button>
-                                <button>SUBSCRIBE</button>
+                                <button>Schedule</button>
                             </div>
                         </div>
                     </div>
@@ -137,7 +141,7 @@
                             </div>
                             <div class="buttons">
                                 <button>SEE MORE</button>
-                                <button>SUBSCRIBE</button>
+                                <button>Schedule</button>
                             </div>
                         </div>
                     </div>
@@ -205,6 +209,7 @@
 
 
     <!-- About Section -->
+
     <section id="about-section" class="about-section">
 
         <div class="about-info">
@@ -232,11 +237,6 @@
 
     <!-- About Section end -->
 
-
-
-
-
-
     <!-- Services Section -->
 
     <section id="services-section" class="services-section">
@@ -248,7 +248,7 @@
                 <h3 class="service-card__name">Online Booking</h3>
             </a>
 
-            <a href="#consultations" class="service-card">
+            <a href="#Scheduleations" class="service-card">
                 <span class="card-logo"><i class="fa-solid fa-comment-medical"></i></span>
                 <h3 class="service-card__name">Advice</h3>
             </a>
@@ -260,7 +260,7 @@
 
             <a href="#lab" class="service-card">
                 <span class="card-logo"><i class="fa-solid fa-flask-vial"></i></span>
-                <h3 class="service-card__name">Laboratoriya tahlillari</h3>
+                <h3 class="service-card__name">Laboratory Analysis</h3>
             </a>
 
             <a href="#pediatric" class="service-card">
@@ -290,57 +290,60 @@
         </div>
     </section>
 
-    <!-- Bizni avzaliklarimoz -->
+    <!-- Services Section end -->
+    <!-- our  advantages -->
 
     <section class="advantages-section">
         <div class="advantages-container">
             <h2>CureX Advantages</h2>
-    
+
             <div class="cards">
-    
+
                 <div class="card">
                     <div class="icon">✓</div>
                     <h3>Queue-free service</h3>
-                    <p>All services at CureX are carried out through online pre-registration. Convenient diagnostics without waiting in line.</p>
+                    <p>All services at CureX are carried out through online pre-registration. Convenient diagnostics
+                        without waiting in line.</p>
                 </div>
-    
+
                 <div class="card">
                     <div class="icon">ID</div>
                     <h3>Personal ID Bracelet</h3>
-                    <p>Each patient receives an individual ID bracelet. It speeds up processes and keeps all your information organized.</p>
+                    <p>Each patient receives an individual ID bracelet. It speeds up processes and keeps all your
+                        information organized.</p>
                 </div>
-    
+
                 <div class="card">
                     <div class="icon">📄</div>
                     <h3>Electronic Medical Card</h3>
-                    <p>Analysis and check-up results are automatically uploaded to your electronic card. Always accessible.</p>
+                    <p>Analysis and check-up results are automatically uploaded to your electronic card. Always
+                        accessible.</p>
                 </div>
-    
+
                 <div class="card">
                     <div class="icon">📊</div>
                     <h3>CureX Dashboard</h3>
-                    <p>Track your body temperature, pulse, glucose, weight, sleep quality, and other indicators in real time.</p>
+                    <p>Track your body temperature, pulse, glucose, weight, sleep quality, and other indicators in real
+                        time.</p>
                 </div>
-    
+
                 <div class="card">
                     <div class="icon">⚗️</div>
                     <h3>Fast and Accurate Tests</h3>
                     <p>Modern laboratory equipment provides highly accurate results in a short time.</p>
                 </div>
-    
+
                 <div class="card">
                     <div class="icon">📱</div>
                     <h3>All Services in One Place</h3>
-                    <p>Consultations, tests, and recommendations are completed in just a few steps via the mobile app or website.</p>
+                    <p>Scheduleations, tests, and recommendations are completed in just a few steps via the mobile app
+                        or website.</p>
                 </div>
-    
+
             </div>
         </div>
     </section>
-    
 
-
-    </section>
     <!-- Doctors section  -->
 
     <section id="doctors_section">
@@ -355,7 +358,7 @@
                         <img src="image/doctor1.jpeg" alt="">
                     </div>
                     <div class="card_des">
-                        <h2 class="title">Dr. Sarah Johnson</h2>
+                        <h2 class="title">Dr. John Doe</h2>
                         <p class="field">Cardiologist</p>
                         <div class="rank">
                             <div class="icon "><i class="bi bi-star-fill star"></i></div>
@@ -390,23 +393,23 @@
                     </div>
                     <div class="card_des">
                         <h2 class="title">Dr. Sarah Johnson</h2>
-                        <p class="field">Cardiologist</p>
+                        <p class="field">Dentist</p>
                         <div class="rank">
                             <div class="icon "><i class="bi bi-star-fill star"></i></div>
                             <div class="rank_info">
-                                <p> <span>4.9 </span>(2400+ patients)</p>
+                                <p> <span>4.9 </span>(2200+ patients)</p>
                             </div>
                         </div>
                         <div class="rank">
                             <div class="icon"><i class="bi bi-award"></i></div>
                             <div class="rank_info">
-                                <p>15 years of experience</span></p>
+                                <p>13 years of experience</span></p>
                             </div>
                         </div>
                         <div class="rank">
                             <div class="icon"><i class="bi bi-people"></i></div>
                             <div class="rank_info">
-                                <p>85 current patients</span></p>
+                                <p>79 current patients</span></p>
                             </div>
                         </div>
                         <div class="button">
@@ -424,24 +427,24 @@
                         <img src="image/doctor3.jpeg" alt="">
                     </div>
                     <div class="card_des">
-                        <h2 class="title">Dr. Sarah Johnson</h2>
-                        <p class="field">Cardiologist</p>
+                        <h2 class="title">Dr. Stella Watson</h2>
+                        <p class="field">Neurologist</p>
                         <div class="rank">
                             <div class="icon "><i class="bi bi-star-fill star"></i></div>
                             <div class="rank_info">
-                                <p> <span>4.9 </span>(2400+ patients)</p>
+                                <p> <span>4.4 </span>(2300+ patients)</p>
                             </div>
                         </div>
                         <div class="rank">
                             <div class="icon"><i class="bi bi-award"></i></div>
                             <div class="rank_info">
-                                <p>15 years of experience</span></p>
+                                <p>11 years of experience</span></p>
                             </div>
                         </div>
                         <div class="rank">
                             <div class="icon"><i class="bi bi-people"></i></div>
                             <div class="rank_info">
-                                <p>85 current patients</span></p>
+                                <p>87 current patients</span></p>
                             </div>
                         </div>
                         <div class="button">
@@ -460,23 +463,23 @@
                     </div>
                     <div class="card_des">
                         <h2 class="title">Dr. Sarah Johnson</h2>
-                        <p class="field">Cardiologist</p>
+                        <p class="field">Urologist</p>
                         <div class="rank">
                             <div class="icon "><i class="bi bi-star-fill star"></i></div>
                             <div class="rank_info">
-                                <p> <span>4.9 </span>(2400+ patients)</p>
+                                <p> <span>4.7 </span>(2350+ patients)</p>
                             </div>
                         </div>
                         <div class="rank">
                             <div class="icon"><i class="bi bi-award"></i></div>
                             <div class="rank_info">
-                                <p>15 years of experience</span></p>
+                                <p>14 years of experience</span></p>
                             </div>
                         </div>
                         <div class="rank">
                             <div class="icon"><i class="bi bi-people"></i></div>
                             <div class="rank_info">
-                                <p>85 current patients</span></p>
+                                <p>91 current patients</span></p>
                             </div>
                         </div>
                         <div class="button">
@@ -496,7 +499,340 @@
     <!-- Doctors section  end -->
     <!-- ----------- -->
 
-    <!-- Services Section end -->
+    <!-- Comments section -->
+    <section id="comments">
+        <div class="comments_container">
+            <h1 class="title">What Our Patients Say</h1>
+            <div class="slider" style="
+            --width: 350px;
+            --height: 350px;
+            --quantity: 10;
+        ">
+                <div class="list">
+                    <div class="item" style="--position: 1">
+                        <div class="info">
+                            <div class="quotes">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="des">
+                                <div class="rate">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                CureX helped me book my appointment quickly without waiting in long lines. The process
+                                was simple and stress-free.”
+
+
+
+                            </div>
+                        </div>
+                        <div class="account">
+                            <div class="account_img">
+                                <img src="image/patient1.jpeg" alt="">
+
+                            </div>
+                            <div class="about_des">
+                                <h6>Will Smith</h6>
+
+                                <p>Pediatric Care</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="--position: 2">
+                        <div class="info">
+                            <div class="quotes"><i class="bi bi-quote"></i></div>
+                            <div class="des">
+                                <div class="rate">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                “I love how organized the service is. All my information is saved, so I don’t have to
+                                repeat anything at the clinic.”
+
+
+                            </div>
+                        </div>
+                        <div class="account">
+                            <div class="account_img">
+                                <img src="image/patient2.jpeg" alt="">
+
+                            </div>
+                            <div class="about_des">
+                                <h6>Emma Watson</h6>
+
+                                <p>Pediatric Care</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="--position: 3">
+                        <div class="info">
+                            <div class="quotes">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="des">
+                                <div class="rate">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                The doctors were already prepared when I arrived. I felt like my time was respected.”
+
+
+
+                            </div>
+                        </div>
+                        <div class="account">
+                            <div class="account_img">
+                                <img src="image/patient3.jpeg" alt="">
+
+                            </div>
+                            <div class="about_des">
+                                <h6>Maria Ellen</h6>
+
+                                <p>Cardiologic Care</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="--position: 4">
+                        <div class="info">
+                            <div class="quotes">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="des">
+                                <div class="rate">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                The doctors were already prepared when I arrived. I felt like my time was respected.”
+
+
+
+                            </div>
+                        </div>
+                        <div class="account">
+                            <div class="account_img">
+                                <img src="image/patient4.jpeg" alt="">
+
+                            </div>
+                            <div class="about_des">
+                                <h6>Atlas Hoover</h6>
+
+                                <p>Dentist Care </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="--position: 5">
+                        <div class="info">
+                            <div class="quotes">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="des">
+                                <div class="rate">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                “Reminders before appointments are very helpful. I never forget my check-ups now.”
+
+
+
+                            </div>
+                        </div>
+                        <div class="account">
+                            <div class="account_img">
+                                <img src="image/patient5.jpeg" alt="">
+
+                            </div>
+                            <div class="about_des">
+                                <h6>Stella Watson</h6>
+
+                                <p>Online Consulting</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="--position: 6">
+                        <div class="info">
+                            <div class="quotes">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="des">
+                                <div class="rate">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                "Dr. Rodriguez is amazing with children. My son always feels comfortable during visits.
+                                Highly recommended!"
+
+
+
+                            </div>
+                        </div>
+                        <div class="account">
+                            <div class="account_img">
+                                <img src="image/patient6.jpeg" alt="">
+
+                            </div>
+                            <div class="about_des">
+                                <h6>Will Smith</h6>
+
+                                <p>Pediatric Care</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="--position: 7">
+                        <div class="info">
+                            <div class="quotes">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="des">
+                                <div class="rate">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                “The app design is clean and easy to use. Even beginners can understand everything.”
+
+
+
+                            </div>
+                        </div>
+                        <div class="account">
+                            <div class="account_img">
+                                <img src="image/patient7.jpeg" alt="">
+
+                            </div>
+                            <div class="about_des">
+                                <h6>Ryle Ryan</h6>
+
+                                <p>Pediatric Care</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="--position: 8">
+                        <div class="info">
+                            <div class="quotes">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="des">
+                                <div class="rate">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                “Customer support responded fast when I had questions. They guided me clearly and
+                                politely.”
+
+
+
+                            </div>
+                        </div>
+                        <div class="account">
+                            <div class="account_img">
+                                <img src="image/patient8.jpeg" alt="">
+
+                            </div>
+                            <div class="about_des">
+                                <h6>Izzy Smith</h6>
+
+                                <p> Care</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="--position: 9">
+                        <div class="info">
+                            <div class="quotes">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="des">
+                                <div class="rate">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                “I can choose any doctor I want by checking their profile. It’s great to see their
+                                experience and ratings.”
+
+
+
+                            </div>
+                        </div>
+                        <div class="account">
+                            <div class="account_img">
+                                <img src="image/patient9.jpeg" alt="">
+
+                            </div>
+                            <div class="about_des">
+                                <h6>Ellen Musen</h6>
+
+                                <p>Child Care</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="--position: 10">
+
+                        <div class="info">
+                            <div class="quotes">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="des">
+                                <div class="rate">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                “Booking for my family members in one account is super convenient. It keeps everything
+                                organized for us.”
+
+
+
+                            </div>
+                        </div>
+                        <div class="account">
+                            <div class="account_img">
+                                <img src="image/patient10.jpeg" alt="">
+
+                            </div>
+                            <div class="about_des">
+                                <h6>John Doe</h6>
+
+                                <p>Neurologic Care</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <!-- Comments section  end-->
+
+
 
     <script src="banner.js"></script>
 
