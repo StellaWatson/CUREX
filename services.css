@@ -25,12 +25,13 @@
   border-radius: 18px;
   padding: 10px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   text-decoration: none;
 }
 
 .service-card:hover {
   background-color: var(--primary-color);
+  transform: translateY(-8px);
 }
 
 .service-card:active {
