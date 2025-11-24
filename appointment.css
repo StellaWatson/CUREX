@@ -1,0 +1,39 @@
+#appointment_section{
+    background-color: #F5F9FF;
+}
+.appointment_container{
+    width: 80%;
+    margin: 10rem auto;
+    
+}
+.appointment_container .callToAction{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    background-color: #152B55;
+    color: white;
+    height: 500px;
+    border-radius: 30px;
+
+}
+.callToAction .call_img{
+    width: 450px;
+}
+.call_img img{
+    width: 100%;    
+    object-fit: cover;
+}
+
+.callToAction .call_info h1{
+font-size: 2.3rem;
+margin-bottom: 2rem;
+} 
+.callToAction .call_info .appointment_btn .btn{
+    width: 360px;
+    height: 60px;
+    color: #1CBDDE;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+}
