@@ -563,32 +563,32 @@
     <!-- Other Pages (initially hidden) -->
     <div class="page-content" id="patients">
       <h2>Patients Management</h2>
-     
+
     </div>
 
     <div class="page-content" id="doctors">
       <h2>Doctors Management</h2>
-      
+
     </div>
 
     <div class="page-content" id="appointments">
       <h2>Appointments</h2>
-     
+
     </div>
 
     <div class="page-content" id="medical-records">
       <h2>Medical Records</h2>
-     
+
     </div>
 
     <div class="page-content" id="billing">
       <h2>Billing & Invoices</h2>
-    
+
     </div>
 
     <div class="page-content" id="inventory">
       <h2>Inventory Management</h2>
-    
+
     </div>
 
     <div class="page-content" id="reports">
@@ -608,43 +608,43 @@
       item.addEventListener('click', function () {
         // Remove active class from all menu items
         document.querySelectorAll('.sidebar-menu li').forEach(li => {
-          li.classList.remove('active');
-        });
+          li.classList.remove('active')
+        })
 
         // Add active class to clicked item
-        this.classList.add('active');
+        this.classList.add('active')
 
         // Hide all pages
         document.querySelectorAll('.page-content').forEach(page => {
-          page.classList.remove('active');
-        });
+          page.classList.remove('active')
+        })
 
         // Show selected page
-        const pageId = this.getAttribute('data-page');
-        document.getElementById(pageId).classList.add('active');
+        const pageId = this.getAttribute('data-page')
+        document.getElementById(pageId).classList.add('active')
 
         // Update header title
-        document.querySelector('.header h1').textContent = this.querySelector('span').textContent;
-      });
-    });
+        document.querySelector('.header h1').textContent = this.querySelector('span').textContent
+      })
+    })
 
     // Toggle sidebar on mobile
     document.querySelector('.menu-toggle').addEventListener('click', function () {
-      const sidebar = document.querySelector('.sidebar');
-      const mainContent = document.querySelector('.main-content');
+      const sidebar = document.querySelector('.sidebar')
+      const mainContent = document.querySelector('.main-content')
 
       if (sidebar.style.width === '0px' || sidebar.style.width === '') {
-        sidebar.style.width = '250px';
-        mainContent.style.marginLeft = '250px';
+        sidebar.style.width = '250px'
+        mainContent.style.marginLeft = '250px'
       } else {
-        sidebar.style.width = '0';
-        mainContent.style.marginLeft = '0';
+        sidebar.style.width = '0'
+        mainContent.style.marginLeft = '0'
       }
-    });
+    })
 
     // Charts
     // Revenue Chart
-    const revenueCtx = document.getElementById('revenueChart').getContext('2d');
+    const revenueCtx = document.getElementById('revenueChart').getContext('2d')
     const revenueChart = new Chart(revenueCtx, {
       type: 'line',
       data: {
@@ -680,10 +680,10 @@
           }
         }
       }
-    });
+    })
 
     // Patient Statistics Chart
-    const patientCtx = document.getElementById('patientChart').getContext('2d');
+    const patientCtx = document.getElementById('patientChart').getContext('2d')
     const patientChart = new Chart(patientCtx, {
       type: 'doughnut',
       data: {
