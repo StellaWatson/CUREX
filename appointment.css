@@ -1,0 +1,94 @@
+#appointment_section{
+    background-color: #F5F9FF;
+}
+.appointment_container{
+    width: 80%;
+    margin: 10rem auto;
+    
+}
+.appointment_container .callToAction{
+    display: flex;
+    align-items: center;
+    gap: 9.375rem;
+    
+    background-color: #152B55;
+    color: white;
+    height: 31.25rem;
+    border-radius: 1.875rem;
+
+
+}
+.callToAction .call_img{
+    width: 28.125rem;
+}
+.call_img img{
+    width: 100%;    
+    object-fit: cover;
+}
+
+.callToAction .call_info h1{
+font-size: 2.3rem;
+margin-bottom: 2rem;
+} 
+.callToAction .call_info .appointment_btn .btn{
+    width: 22.5rem;
+    height: 3.75rem;
+    color: #1CBDDE;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+    border-radius: 1.25rem;
+    transition: 0.3s ease;
+}
+@media screen and (max-width:1024px) {
+    .callToAction{
+        padding: 2rem;
+        gap: 20px;
+    }
+    .callToAction .call_img img{
+        height:400px ;
+        width: 250px;
+
+    } 
+    .callToAction  .call_info h1{
+        font-size: 1.5rem;
+    }
+    .callToAction  .call_info .appointment_btn .btn{
+        width: 260px;
+        height: 40px;
+        border-radius: 10px;
+
+    }
+
+}
+@media screen and (max-width:992px) {
+    .appointment_container .callToAction{
+        padding: 2rem;
+        display: block!important;
+        height: 700px;
+        text-align: center;
+    }
+
+    .callToAction .call_img{
+        width: 90%;
+    }
+    .callToAction .call_img img{
+        height:400px ;
+       
+        width: 100%;
+
+    } 
+    .callToAction  .call_info{
+        margin-top: 6rem;
+    }
+    .callToAction  .call_info h1{
+        font-size: 1.5rem;
+    }
+    .callToAction  .call_info .appointment_btn .btn{
+        width: 260px;
+        height: 40px;
+        border-radius: 10px;
+
+    }
+    
+}
