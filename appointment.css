@@ -1,8 +1,11 @@
 #appointment_section{
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
     background-color: #F5F9FF;
 }
-.appointment_container{
-    width: 80%;
+#appointment_section .appointment_container{
+    width: 100%;
     margin: 10rem auto;
     
 }

@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#blogContent_section {
+    width: 80%;
+    max-width: 71.25rem;
+    margin: 0 auto;
+    margin-top: 7rem;
+
+}
+
+.blogContent_container {
+    width: 100%;
+}
+
+.blogContent_container .goBack {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    color: #152B55;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+
+}
+
+a {
+    color: #152B55;
+
+}
+
+.goBack .back_icon {
+    font-size: 1.5rem;
+}
+
+.blogContent_container .blog_main,
+.symptoms,
+.effects,
+.causes,
+.treatment {
+    width: 100%;
+    height: 37.5rem;
+    border-radius: 1.875rem;
+    margin-top: 5rem;
+    box-shadow: 5px 2px 0.625rem 2px lightgray;
+}
+
+.blog_main .main_img {
+    width: 100%;
+    height: 28.125rem;
+}
+
+.blog_main .main_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.875rem 1.875rem 0 0;
+}
+
+.main_info {
+    padding: 2rem;
+    color: gray;
+
+}
+
+.main_info .title_main {
+    width: 8.125rem;
+    height: 1.875rem;
+    background-color: #1CBDDE;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_info .main_des {
+    margin-top: 2rem;
+}
+
+
+.blogContent_container .symptoms {
+    height: 26.25rem;
+    padding: 2.5rem;
+    color: gray;
+
+}
+
+
+.symptoms_title,
+.effects_title,
+.causes_title,
+.treatment_title {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+
+
+}
+
+.symptoms_title .title_icon img,
+.effect_icon img,
+.causes_icon img,
+.treatment_icon img {
+    width: 3.125rem;
+    height: 3.125rem;
+    object-fit: cover;
+}
+
+.symptoms_title_info h1,
+.effects_title .effects_info h1,
+.causes_title .causes_info h1,
+.treatment_info h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #152B55;
+}
+
+.symptoms_subtitle {
+    margin-top: 2rem;
+    color: gray;
+}
+
+.list_of_symptoms,
+.treatment_list {
+
+    display: flex;
+    align-items: center;
+    gap: 25rem;
+    margin-top: 2rem;
+}
+
+.list_items {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+
+    margin-bottom: 1.875rem;
+}
+
+.list_items .icon {
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.effects {
+    height: 26.875rem;
+    padding: 2rem;
+    color: gray;
+}
+
+.effects_subtitle {
+    margin: 2rem 0;
+}
+
+.causes {
+    height: 47.5rem;
+    padding: 2rem;
+    border-left: 7px solid red;
+    color: gray;
+}
+
+.causes_subtitle,
+.treatment_subtitle {
+    margin: 2rem 0;
+}
+
+.important_Cause {
+
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    height: 8.125rem;
+    background-color: #f4cfcf;
+    color: red;
+    border-radius: 1.25rem;
+    padding: 2rem;
+}
+
+.treatment {
+    padding: 2rem;
+    color: gray;
+    height: 31.25rem;
+}
+
+.treatment_list {
+    margin-top: 5rem;
+}
+
+.treatment_list .icon {
+    background-color: #152B55;
+}
+
+@media screen and (max-width:992px) {
+    html {
+        font-size: 14px;
+    }
+
+    .blog_main {
+        height: 400px;
+    }
+
+    .blog_main .main_img {
+        height: 320px;
+    }
+
+    .blog_main .main_info {
+        /* height: 100px; */
+        padding: 1rem;
+    }
+
+    .blogContent_container .symptoms,
+    .blogContent_container .effects,
+    .blogContent_container .treatment {
+        height: 460px;
+        font-size: 12px;
+    }
+
+    .blogContent_container .treatment {
+        height: 550px;
+    }
+
+    .blogContent_container .causes {
+        font-size: 12px;
+    }
+
+    .causes .important_Cause {
+        height: 110px;
+        font-size: 11px;
+    }
+
+}
+
+@media screen and (max-width:820px) {
+
+    .blogContent_container .list_of_symptoms,
+    .blogContent_container .treatment_list {
+        display: block;
+
+    }
+
+    .blogContent_container .symptoms,
+    .blogContent_container .effects,
+    .blogContent_container .treatment {
+        height: 600px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:625px){
+.blogContent_container .causes .important_Cause{
+    display: none;
+}
+}
