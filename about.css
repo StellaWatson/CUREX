@@ -1,19 +1,21 @@
 #about-section {
-  width: 80%;
-  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: 10rem auto;
+  /* margin-top: 6rem; */
   padding: 50px 0;
   display: flex;
   align-items: center;
   gap: 40px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position-x: -150px;
-  background-position-y: 70px;
+  background-position: -150px 70px;
+  flex-wrap: wrap;
 }
 
 .about-info {
-  width: 600px;
-  padding: 38px;
+  flex: 1 1 250px; /* smaller base width */
+  padding: 1.5rem 2rem; /* reduced padding */
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   border-radius: 15px;
@@ -21,15 +23,24 @@
 }
 
 .about-info__title {
-  font-size: 36px;
+  font-size: 1.75rem; /* smaller title */
   color: var(--secondary-color);
+  margin-bottom: 0.75rem;
 }
 
 .about-info__description {
-  font-size: 14px;
+  font-size: 0.9rem; /* smaller text */
   font-weight: 300;
   color: var(--text-color);
+  line-height: 1.5;
 }
+
+/* .about-action {
+  padding: 8px 16px; 
+  font-size: 0.9rem;
+  margin-top: 15px;
+} */
+
 
 .about-action {
   padding: 10px 20px;
@@ -39,7 +50,7 @@
   background-color: var(--primary-color);
   color: #fff;
   margin-top: 20px;
-  transition: box-shadow 0.8s;
+  transition: box-shadow 0.5s, background-color 0.5s;
 }
 
 .about-action:hover {
@@ -48,17 +59,18 @@
 }
 
 .about-video {
-  width: 500px;
-  height: 500px;
+  flex: 1 1 300px; /* flexible width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-video video {
   width: 100%;
-  height: 400px;
-  margin-top: 2.5rem;
-  object-fit: cover;
+  max-width: 500px;
+  height: auto;
   border-radius: 20px;
-  overflow: hidden;
+  object-fit: cover;
   box-shadow: 0 10px 25px var(--shadow-color);
   transition: transform 0.8s ease;
 }
@@ -67,20 +79,36 @@
   transform: scale(1.05);
 }
 
-/* 🔹 Адаптивка */
+/* 🔹 Responsive */
 @media screen and (max-width: 950px) {
   #about-section {
     flex-direction: column;
+    gap: 30px;
   }
 
   .about-info {
-    margin-left: 0;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .about-video video {
+    max-width: 100%;
+    height: auto;
   }
 }
 
-@media screen and (max-width: 840px) {
-  #about-section {
-    background-position-x: -180px;
-    background-position-y: 230px;
+@media screen and (max-width: 600px) {
+  .about-info__title {
+    font-size: 1.75rem;
+  }
+
+  .about-info__description {
+    font-size: 0.9rem;
+  }
+
+  .about-action {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
   }
 }
