@@ -111,27 +111,36 @@
         <div class="user-info">
           <div class="user-info__container">
             <div class="personal-info">
-              <h2>Personal Information</h2>
+              <h2 class="title">Personal Information</h2>
 
               <div class="personal-info__form">
-                <label for="name">Full name: </label>
-                <input type="text" name="name" id="name">
-
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email">
-
-                <label for="phone">Phone number: </label>
-                <input type="text" name="phone" id="phone">
-
-                <label for="blood">Blood type: </label>
-                <input type="text" name="blood" id="blood">
+                <div class="form-group">
+                  <label for="name">Full name: </label>
+                  <input type="text" name="name" id="name">
+                </div>
+              
+                <div class="form-group">
+                  <label for="email">Email: </label>
+                  <input type="email" name="email" id="email">
+                </div>
+              
+                <div class="form-group">
+                  <label for="phone">Phone number: </label>
+                  <input type="text" name="phone" id="phone">
+                </div>
+              
+                <div class="form-group">
+                  <label for="blood">Blood type: </label>
+                  <input type="text" name="blood" id="blood">
+                </div>
+              
 
                 <button class="save" type="submit">Save changes</button>
               </div>
             </div>
 
             <div class="quick-stats">
-              <h2>Quick stats</h2>
+              <h2 class="title">Quick stats</h2>
 
               <div class="health-info">
                 <div class="health-info__icon ttz">
@@ -165,6 +174,153 @@
               </div>
             </div>
           </div>
+
+          <div class="user-body__container">
+            <div class="user-body__measurement">
+              <h2 class="title">Body Measurements</h2>
+
+              <div class="user-body__form">
+                <div class="form-group">
+                  <label for="height">Height (cm): </label>
+                  <input type="number" name="height" id="height">
+                </div>
+              
+                <div class="form-group">
+                  <label for="weight">Weight (kg): </label>
+                  <input type="number" name="weight" id="weight">
+                </div>
+              
+                <div class="form-group">
+                  <label for="blood">Blood type: </label>
+                  <input type="text" name="blood" id="blood">
+                </div>
+                <br>
+              
+
+                <button class="save" type="submit">Save changes</button>
+              </div>
+            </div>
+
+            <div class="user-body__analysis">
+              <h2 class="title">BMI Analysis</h2>
+
+              <div class="user-body__status">
+                <h4>26.6</h4>
+              </div>
+
+              <div class="user-body__size">
+                <div class="body-size">
+                  <p>Height: </p>
+                  <p>156 cm</p>
+                </div>
+                <hr>
+
+                <div class="body-size">
+                  <p>Weight: </p>
+                  <p>55 kg</p>
+                </div>
+                <hr>
+
+                <div class="body-size">
+                  <p>Status: </p>
+                  <p>Normal</p>
+                </div>
+                <hr>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="symptom-history__container">
+            <div class="symptom-tracking">
+              <h2 class="title">Symptom Tracking</h2>
+
+              <p>Track your symptoms to help your doctor better understand your health concerns.</p>
+
+              <div class="add-symptom">
+                <input class="symptom-input" type="text" name="" id="" placeholder="Enter symptom">
+                <button class="add-button"><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+
+            <div class="signs-history">
+              <h2 class="title">Vital Signs History</h2>
+
+              <table class="signs-history__table">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Blood Pressure</th>
+                    <th>Heart Rate</th>
+                    <th>Temperature (°F)</th>
+                    <th>Weight (kg)</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Nov 10, 2025</td>
+                    <td>120/80 mmHg</td>
+                    <td>72 bpm</td>
+                    <td>98.6</td>
+                    <td>75</td>
+                  </tr>
+
+                  <tr>
+                    <td>Nov 10, 2025</td>
+                    <td>120/80 mmHg</td>
+                    <td>72 bpm</td>
+                    <td>98.6</td>
+                    <td>75</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+
+
+          <div class="my-appointments">
+            <h2 class="title">My Appointment</h2>
+
+
+            <div class="my-appointments__list">
+              <div class="my-appointment">
+                <div class="top-appointment">
+                  <h3 class="appointment-doctor">Dr. Sarah Johnson</h3>
+                  <span class="appointment-badge">Uncoming</span>
+                </div>
+                <h6 class="doctor-type">Cardiologist</h6>
+                <p class="appointment-date">📆 Nov 25, 2025, ⏰ 10:00</p>
+              </div>
+
+              <div class="my-appointment">
+                <div class="top-appointment">
+                  <h3 class="appointment-doctor">Dr. Sarah Johnson</h3>
+                  <span class="appointment-badge">Upcoming</span>
+                </div>
+                <h6 class="doctor-type">Cardiologist</h6>
+                <p class="appointment-date">📆 Nov 25, 2025, ⏰ 10:00</p>
+              </div>
+
+              <div class="my-appointment">
+                <div class="top-appointment">
+                  <h3 class="appointment-doctor">Dr. Sarah Johnson</h3>
+                  <span class="appointment-badge">Completed</span>
+                </div>
+                <h6 class="doctor-type">Cardiologist</h6>
+                <p class="appointment-date">📆 Nov 25, 2025, ⏰ 10:00</p>
+              </div>
+
+              <button class="new-appointment">Book new appointment</button>
+            </div>
+  
+          </div>
+
+         
         </div>
 
 
