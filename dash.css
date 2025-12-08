@@ -457,6 +457,8 @@ td, th{
     flex: 1 1 30%;
   }
   
+
+  
 }
 @media screen and (max-width:570px){
   .signs-history__table{
