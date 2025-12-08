@@ -447,9 +447,32 @@ td, th{
 
 
 /* QUICK Responsive design */
-
+@media screen and (max-width:900px){
+  .dash-category{
+    flex: 1 1 30%;
+  }
+}
+@media screen and (max-width:700px) {
+  .dash-category{
+    flex: 1 1 30%;
+  }
+  
+}
 @media screen and (max-width:570px){
   .signs-history__table{
     display: none;
   }
+
+  .save{
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width:390px) {
+  .dash-category{
+    flex: 1 1 100%;
+  }
+  
 }
