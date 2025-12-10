@@ -43,6 +43,9 @@ margin-bottom: 2rem;
     border-radius: 1.25rem;
     transition: 0.3s ease;
 }
+.callToAction .call_info .appointment_btn .btn a{
+    color:#1CBDDE ;
+}
 @media screen and (max-width:1024px) {
     .callToAction{
         padding: 2rem;

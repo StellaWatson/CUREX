@@ -20,7 +20,10 @@ body{
   --border-color: #e0e0e0;
   
 }
-
+a{
+  text-decoration: none;
+  color:var(--background-color);
+}
 
 .title{
   color: var(--secondary-color);
@@ -47,6 +50,7 @@ body{
 
 .welcome-desc{
   color: #797979;
+  margin-top: 2rem;
 }
 
 .welcome-page__img img{
@@ -68,11 +72,22 @@ body{
   padding: 5px 10px;
   flex: 1 1 70px;
   text-align: center;
-  border: 2px solid #1CBDDE;
+  border: .5px solid #1CBDDE;
   border-radius: 20px;
   cursor: pointer;
-  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.641);
+  box-shadow: 0px 2px 6px 3px lightgray;
+  transition: .8s ease;
 }
+.dash-category a{
+  color: var(--secondary-color);
+}
+.dash-category:hover{
+  /* background-color: var(--primary-color); */
+  color: white;
+  /* border: 1px solid white; */
+  box-shadow: 0px 2px 6px 3px var(--hover-color);
+}
+
 
 .category-title{
   font-weight: 500;
@@ -119,6 +134,7 @@ input{
   border-radius: 10px;
   color: #FFFFFF;
   cursor: pointer;
+  margin-top: 20px;
 }
 .personal-info{
   background-color: var(--background-color);
@@ -195,6 +211,9 @@ input{
   flex-direction: column;
   align-items: center;
 } */
+.title{
+  text-align: center;
+}
 
 .user-body__status{
   display: flex;
@@ -205,9 +224,13 @@ input{
   height: 100px;
   text-align: center;
   border-radius: 50%;
+  text-align: center;
+  position: relative;
+  left: 150px;
+  top: 20px;
 }
 
-.user-body__status{}
+
 .body-size{
   margin-top: 20px;
   display: flex;
@@ -351,13 +374,17 @@ td, th{
   width: 100%;
   background-color: #1CBDDE;
   border: none;
-  padding: 5px 10px;
+  padding: 9px 10px;
   border-radius: 5px;
   color: #FFFFFF;
   cursor: pointer;
   font-weight: 500;
+  transition: .6s ease;
 }
-
+.new-appointment:hover{
+  box-shadow: 0 0 20px var(--accent-color);
+  background-color: var(--hover-color);
+}
 
 
 .body-appointment{

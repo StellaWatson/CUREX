@@ -1,0 +1,296 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f3f7ff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* h2, h3 {
+    margin: 0;
+} */
+
+a {
+    text-decoration: none;
+    /* color: #333; */
+}
+.star {
+    color: red;
+}
+/* 
+.navbar {
+    width: calc(90% - 40px);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    background: #fff;
+    border-radius: 100px;
+    box-shadow: 0px 2px 8px #d9e2f5;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.logo {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.datee {
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 85px;
+}
+
+.blue {
+    color: #4cc6e4;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    font-size: 14px;
+    color: #032775;
+}
+
+.sekt {
+    width: 95%;
+}
+
+.profile-icon {
+    font-size: 20px;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 110px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #032775;
+} */
+.page-title {
+    text-align: center;
+    margin-top: 110px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #032775;
+} 
+.container {
+    display: flex;
+    width: 80%;
+    margin: 40px auto;
+    gap: 50px;
+}
+
+.left {
+    flex: 1;
+}
+
+.section-box {
+    background: white;
+    padding: 35px;       
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px #d9e2f5;
+    max-width: 800px;         
+}
+
+.box-title {
+    font-size: 15px;
+    margin-bottom: 18px;
+    color: #4a4a4a;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    border: 1px solid #dce3f1;
+    border-radius: 7px;
+    background: #f8fafe;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #4cc6e4;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #4cc6e4;
+    outline: none;
+}
+
+textarea {
+    height: 90px;
+    resize: none;
+}
+
+.weekdays {
+    font-weight: bold;
+}
+
+.right {
+    width: 380px;
+}
+
+.calendar-box {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 3px 10px #d9e2f5;
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.calendar-icon {
+    width: 24px;
+}
+
+.calendar-body {
+    background: #f8fafe;
+    border-radius: 12px;
+    padding: 20px;
+    border: 2px solid #71bff3;
+    margin-top: 35px;
+}
+
+.month {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.weekdays,
+.days {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.weekdays span,
+.days span {
+    text-align: center;
+    font-size: 13px;
+    padding: 6px 0;
+    border-radius: 6px;
+}
+
+.days span:hover {
+    background: #3e7bff;
+    color: white;
+    cursor: pointer;
+}
+
+.confirm-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #4cc6e4;
+    border: none;
+    color: white;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.confirm-btn:hover {
+    box-shadow: 0 0 20px var(--accent-color);
+    background-color: var(--hover-color);
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+
+/* Tablet screens (max-width: 992px) */
+@media (max-width: 992px) {
+    .container {
+        width: 90%;
+        gap: 25px;
+    }
+
+    .page-title {
+        margin-top: 90px;
+        font-size: 20px;
+    }
+
+    .right {
+        width: 320px;
+    }
+}
+
+/* Mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .section-box {
+        padding: 25px;
+    }
+
+    .calendar-body {
+        margin-top: 20px;
+    }
+}
+
+/* Extra small mobile (max-width: 480px) */
+@media (max-width: 480px) {
+
+    .page-title {
+        font-size: 18px;
+        margin-top: 80px;
+    }
+
+    .section-box {
+        padding: 20px;
+    }
+
+    input, select, textarea {
+        padding: 9px;
+        font-size: 13px;
+    }
+
+    .calendar-body {
+        padding: 15px;
+    }
+
+    .days span, .weekdays span {
+        font-size: 12px;
+        padding: 5px 0;
+    }
+
+    .confirm-btn {
+        padding: 10px;
+        font-size: 13px;
+    }
+}

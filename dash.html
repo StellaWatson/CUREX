@@ -19,50 +19,50 @@
   <title>Document</title>
 </head>
 <body>
-    <header id="header">
-        <div class="header_container">
-            <div class="logo">
-                <h1><a href="index.html">CURE<span>X</span></a></h1>
-            </div>
-            <div class="header_nav">
-                <nav class="nav">
-                    <div class="nav_items">
-                        <p class="home"><a href="index.html">Home</a></p>
-                    </div>
-                    <div class="nav_items">
-                        <p class="about"><a href="#">About</a></p>
-                    </div>
-                    <div class="nav_items">
-                        <p class="services"><a href="#">Services</a></p>
-                    </div>
-                    <div class="nav_items">
-                        <p class="blog"><a href="blog.html">Blog</a></p>
-                    </div>
-                    <div class="nav_items">
-                        <p class="appointment"><a href="#">Meet</a></p>
-                    </div>
-                </nav>
-            </div>
-            <div class="header_account">
-                <div class="icon">
-                    <a href="#"><i class="bi bi-person-fill"></i></a>
-
+  <header id="header">
+    <div class="header_container">
+        <div class="logo">
+            <h1><a href="index.html">CURE<span>X</span></a></h1>
+        </div>
+        <div class="header_nav">
+            <nav class="nav">
+                <div class="nav_items">
+                    <p class="home"><a href="index.html">Home</a></p>
                 </div>
-
-                <!-- <button class="btn sign_in">
-                    Sign in
-                </button>
-                <button class="btn sign_up">
-                    Register 
-                </button> -->
-            </div>
-            <div class="menu">
-                <div class="menu_icon">
-                    <i class="bi bi-list"></i>
+                <div class="nav_items">
+                    <p class="about"><a href="#">About</a></p>
                 </div>
+                <div class="nav_items">
+                    <p class="services"><a href="service.html">Services</a></p>
+                </div>
+                <div class="nav_items">
+                    <p class="blog"><a href="blog.html">Blog</a></p>
+                </div>
+                <div class="nav_items">
+                    <p class="appointment"><a href="appointment.html">Meet</a></p>
+                </div>
+            </nav>
+        </div>
+        <div class="header_account">
+            <div class="icon">
+                <a href="dash.html"><i class="bi bi-person-fill"></i></a>
+
+            </div>
+
+            <!-- <button class="btn sign_in">
+                Sign in
+            </button>
+            <button class="btn sign_up">
+                Register 
+            </button> -->
+        </div>
+        <div class="menu">
+            <div class="menu_icon">
+                <i class="bi bi-list"></i>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
 
     <section class="user-dash">
@@ -81,27 +81,27 @@
 
         <div class="dash-categories">
           <div class="dash-category">
-            <h4 class="category-title">Profile</h4>
+            <h4 class="category-title"><a href="#">Profile</a></h4>
           </div>
 
           <div class="dash-category">
-            <h4 class="category-title">Health Date</h4>
+            <h4 class="category-title"><a href="#health_data">Health Date</a></h4>
           </div>
 
           <div class="dash-category">
-            <h4 class="category-title">Appointments</h4>
+            <h4 class="category-title"><a href="#appointments">Appointments</a></h4>
           </div>
 
           <div class="dash-category">
-            <h4 class="category-title">Presscriptions</h4>
+            <h4 class="category-title"><a href="#presscriptions">Presscriptions</a></h4>
           </div>
 
           <div class="dash-category">
-            <h4 class="category-title">Lab Results</h4>
+            <h4 class="category-title"><a href="#lab_results">Lab Results</a></h4>
           </div>
 
           <div class="dash-category">
-            <h4 class="category-title">History</h4>
+            <h4 class="category-title"><a href="#history">History</a></h4>
           </div>
           
         </div>
@@ -109,7 +109,7 @@
 
 
         <div class="user-info">
-          <div class="user-info__container">
+          <div class="user-info__container" id="profile">
             <div class="personal-info">
               <h2 class="title">Personal Information</h2>
 
@@ -175,7 +175,7 @@
             </div>
           </div>
 
-          <div class="user-body__container">
+          <div class="user-body__container" id="health_data">
             <div class="user-body__measurement">
               <h2 class="title">Body Measurements</h2>
 
@@ -232,7 +232,7 @@
 
 
 
-          <div class="symptom-history__container">
+          <div class="symptom-history__container" id="history">
             <div class="symptom-tracking">
               <h2 class="title">Symptom Tracking</h2>
 
@@ -283,7 +283,7 @@
 
 
 
-          <div class="my-appointments">
+          <div class="my-appointments" id="appointments">
             <h2 class="title">My Appointment</h2>
 
 
@@ -315,7 +315,7 @@
                 <p class="appointment-date">📆 Nov 25, 2025, ⏰ 10:00</p>
               </div>
 
-              <button class="new-appointment">Book new appointment</button>
+              <button class="new-appointment"><a href="appointment.html">Book new appointment</a></button>
             </div>
   
           </div>
@@ -323,8 +323,8 @@
 
 
 
-          <div class="my-appointments__desc">
-            <h2 class="title">My Appointments</h2>
+          <div class="my-appointments__desc" id="presscriptions">
+            <h2 class="title">My Presscriptions</h2>
 
 
             <div class="my-appointments__list">
@@ -400,7 +400,7 @@
 
 
 
-          <div class="lab-results">
+          <div class="lab-results" id="lab_results">
             <h2 class="title">My Lab Results</h2>
 
             <div class="lab-result">
