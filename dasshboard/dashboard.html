@@ -6,336 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CureX Admin Dashboard</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- <link rel="stylesheet" href="./dashboard.css"> -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./dashboard.css">
+ 
 
-  <style>
-    :root {
-      --primary: #3498db;
-      --primary-dark: #2980b9;
-      --secondary: #2ecc71;
-      --danger: #e74c3c;
-      --warning: #f39c12;
-      --dark: #2c3e50;
-      --light: #ecf0f1;
-      --gray: #95a5a6;
-      --sidebar-width: 250px;
-    }
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      display: flex;
-      background-color: #f5f7fa;
-      color: #333;
-    }
-
-    /* Sidebar Styles */
-    .sidebar {
-      width: var(--sidebar-width);
-      background: var(--dark);
-      color: white;
-      height: 100vh;
-      position: fixed;
-      transition: all 0.3s;
-      z-index: 1000;
-    }
-
-    .sidebar-header {
-      padding: 20px;
-      background: var(--primary);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .sidebar-header h2 {
-      font-size: 1.5rem;
-    }
-
-    .sidebar-menu {
-      padding: 15px 0;
-    }
-
-    .sidebar-menu ul {
-      list-style: none;
-    }
-
-    .sidebar-menu li {
-      padding: 12px 20px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .sidebar-menu li:hover,
-    .sidebar-menu li.active {
-      background: rgba(255, 255, 255, 0.1);
-      border-left: 4px solid var(--primary);
-    }
-
-    /* Main Content Styles */
-    .main-content {
-      flex: 1;
-      margin-left: var(--sidebar-width);
-      padding: 20px;
-      transition: all 0.3s;
-    }
-
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 30px;
-      padding-bottom: 15px;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .header h1 {
-      color: var(--dark);
-    }
-
-    .user-info {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .user-avatar {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: var(--primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-weight: bold;
-    }
-
-    /* Dashboard Stats */
-    .stats-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      margin-bottom: 30px;
-    }
-
-    .stat-card {
-      background: white;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-    }
-
-    .stat-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-
-    .stat-icon {
-      width: 50px;
-      height: 50px;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 1.5rem;
-    }
-
-    .appointments .stat-icon {
-      background: var(--primary);
-    }
-
-    .patients .stat-icon {
-      background: var(--secondary);
-    }
-
-    .revenue .stat-icon {
-      background: var(--warning);
-    }
-
-    .inventory .stat-icon {
-      background: var(--danger);
-    }
-
-    .stat-value {
-      font-size: 1.8rem;
-      font-weight: bold;
-      margin: 5px 0;
-    }
-
-    .stat-change {
-      font-size: 0.9rem;
-      color: var(--gray);
-    }
-
-    .positive {
-      color: var(--secondary);
-    }
-
-    .negative {
-      color: var(--danger);
-    }
-
-    /* Content Sections */
-    .content-section {
-      background: white;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .section-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #eee;
-    }
-
-    .section-title {
-      font-size: 1.3rem;
-      color: var(--dark);
-    }
-
-    .view-all {
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    /* Table Styles */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    th,
-    td {
-      padding: 12px 15px;
-      text-align: left;
-      border-bottom: 1px solid #eee;
-    }
-
-    th {
-      background: #f8f9fa;
-      font-weight: 600;
-      color: var(--dark);
-    }
-
-    tr:hover {
-      background: #f8f9fa;
-    }
-
-    .status {
-      padding: 5px 10px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 500;
-    }
-
-    .status.completed {
-      background: #e8f5e9;
-      color: #2e7d32;
-    }
-
-    .status.pending {
-      background: #fff3e0;
-      color: #ef6c00;
-    }
-
-    /* Charts Container */
-    .charts-container {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 20px;
-    }
-
-    .chart {
-      background: white;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Page Content */
-    .page-content {
-      display: none;
-    }
-
-    .page-content.active {
-      display: block;
-    }
-
-    /* Responsive */
-    @media (max-width: 992px) {
-      .charts-container {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .sidebar {
-        width: 70px;
-      }
-
-      .sidebar-header h2,
-      .sidebar-menu span {
-        display: none;
-      }
-
-      .main-content {
-        margin-left: 70px;
-      }
-
-      .stats-container {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    @media (max-width: 576px) {
-      .stats-container {
-        grid-template-columns: 1fr;
-      }
-
-      .sidebar {
-        width: 0;
-      }
-
-      .main-content {
-        margin-left: 0;
-      }
-
-      .menu-toggle {
-        display: block;
-      }
-    }
-
-    /* Toggle Button */
-    .menu-toggle {
-      display: none;
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      cursor: pointer;
-      color: var(--dark);
-    }
-  </style>
+  
 </head>
 
 <body>
@@ -450,7 +127,7 @@
       </div>
 
       <!-- Charts Section -->
-      <div class="charts-container">
+      <!-- <div class="charts-container">
         <div class="chart">
           <div class="section-header">
             <h3 class="section-title">Revenue Overview</h3>
@@ -464,51 +141,7 @@
           </div>
           <canvas id="patientChart"></canvas>
         </div>
-      </div>
-
-      <!-- Recent Appointments -->
-      <div class="content-section">
-        <div class="section-header">
-          <h3 class="section-title">Today's Appointments</h3>
-          <a href="#" class="view-all">View All</a>
-        </div>
-        <table>
-          <thead>
-            <tr>
-              <th>Patient</th>
-              <th>Doctor</th>
-              <th>Time</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>John Doe</td>
-              <td>Dr. Alice</td>
-              <td>10:00 AM</td>
-              <td><span class="status completed">Completed</span></td>
-            </tr>
-            <tr>
-              <td>Maria Lopez</td>
-              <td>Dr. Khan</td>
-              <td>11:30 AM</td>
-              <td><span class="status pending">In Progress</span></td>
-            </tr>
-            <tr>
-              <td>Robert Smith</td>
-              <td>Dr. Johnson</td>
-              <td>1:15 PM</td>
-              <td><span class="status pending">Scheduled</span></td>
-            </tr>
-            <tr>
-              <td>Sarah Wilson</td>
-              <td>Dr. Alice</td>
-              <td>3:00 PM</td>
-              <td><span class="status pending">Scheduled</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      </div> -->
 
       <!-- Recent Medical Records -->
       <div class="content-section">
@@ -558,6 +191,51 @@
           </tbody>
         </table>
       </div>
+      <!-- Recent Appointments -->
+      <div class="content-section">
+        <div class="section-header">
+          <h3 class="section-title">Today's Appointments</h3>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Patient</th>
+              <th>Doctor</th>
+              <th>Time</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>Dr. Alice</td>
+              <td>10:00 AM</td>
+              <td><span class="status completed">Completed</span></td>
+            </tr>
+            <tr>
+              <td>Maria Lopez</td>
+              <td>Dr. Khan</td>
+              <td>11:30 AM</td>
+              <td><span class="status pending">In Progress</span></td>
+            </tr>
+            <tr>
+              <td>Robert Smith</td>
+              <td>Dr. Johnson</td>
+              <td>1:15 PM</td>
+              <td><span class="status pending">Scheduled</span></td>
+            </tr>
+            <tr>
+              <td>Sarah Wilson</td>
+              <td>Dr. Alice</td>
+              <td>3:00 PM</td>
+              <td><span class="status pending">Scheduled</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      
     </div>
 
     <!-- Other Pages (initially hidden) -->
@@ -587,7 +265,98 @@
     </div>
 
     <div class="page-content" id="inventory">
-      <h2>Inventory Management</h2>
+      <div class="inventory_header">
+        <div class="title">
+          <h2>Inventory Management</h2>
+          <div class="inventory_des">
+            <div class="inventory_icon">
+              <i class="bi bi-exclamation-triangle"></i>
+            </div>
+            <div class="inventory_info">
+              <p>3 items low in stock</p>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <div class="button_icon">
+            <i class="bi bi-plus"></i>
+          </div>
+          <button class="btn">
+            Add Item
+          </button>
+        </div>
+        
+
+      </div>
+      <div class="content-section">
+        <!-- <div class="section-header">
+
+          <h3 class="section-title">Recent Medical Records</h3>
+          <a href="#" class="view-all">View All</a>
+        </div> -->
+        <div class="search_content">
+          <div class="icon">
+            <i class="bi bi-search"></i>
+          </div>
+          <div class="input">
+            <input type="text" placeholder="Search Inventory...">
+          </div>
+          
+
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Category</th>
+              <th>Quantity</th>
+              <th>Min. Stock</th>
+              <th>Supplier</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Paracetamol</td>
+              <td>Medication</td>
+              <td>45 tablets</td>
+              <td>100 tablets</td>
+              <td>MediSupply Co.</td>
+              <td>Low Stock</td>
+              <td><i class="bi bi-three-dots-vertical"></i></td>
+            </tr>
+            <tr>
+              <td>Gloves (Latex)</td>
+              <td>Medical Supplies</td>
+              <td>85 boxes</td>
+              <td>200 boxes</td>
+              <td>HealthCare Inc.</td>
+              <td>Low Stock</td>
+              <td><i class="bi bi-three-dots-vertical"></i></td>
+            </tr>
+            <tr>
+              <td>Syringes</td>
+              <td>Medical Supplies</td>
+              <td>120 units</td>
+              <td>150 units</td>
+              <td>MediSupply Co.</td>
+              <td>Low Stock</td>
+              <td><i class="bi bi-three-dots-vertical"></i></td>
+            </tr>
+            <tr>
+              <td>Bandages</td>
+              <td>Medication</td>
+              <td>350 rolls</td>
+              <td>200 rolls</td>
+              <td>MediSupply Co.</td>
+              <td>Low Stock</td>
+              <td><i class="bi bi-three-dots-vertical"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
 
     </div>
 
