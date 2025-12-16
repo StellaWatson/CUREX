@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="./dashboard.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
 
@@ -245,12 +247,214 @@
     </div>
 
     <div class="page-content" id="doctors">
-      <h2>Doctors Management</h2>
+      <div class="doctors-dash">
+        <div class="doctors_header">
+          <div class="title">
+            <h2>Doctors</h2>
+          </div>
+
+          <button class="add_doctor btn "><i class="fa-solid fa-plus"></i> Add New Doctor</button>
+        </div>
+
+
+
+        <div class="doctors-tables">
+          <div class="doctors-tables__header">
+            <input class="search-doctors" type="text" placeholder=" Search doctors...">
+          </div>
+
+          <table class="doctors-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Specialty</th>
+                <th>Contact</th>
+                <th>Patients</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Dr. Alice Johnson</td>
+                <td>Cardiology</td>
+                <td>
+                  <div class="contacts-type">
+                    <span><i class="fa-solid fa-voicemail"></i> (555) 111-2222</span>
+                    <span><i class="fa-regular fa-envelope"></i> alice.j@curex.com</span>
+                  </div>
+                </td>
+                <td>45</td>
+                <td>Available</td>
+                <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+              </tr>
+
+              <tr>
+                <td>Dr. Alice Johnson</td>
+                <td>Cardiology</td>
+                <td>
+                  <div class="contacts-type">
+                    <span><i class="fa-solid fa-voicemail"></i> (555) 111-2222</span>
+                    <span><i class="fa-regular fa-envelope"></i> alice.j@curex.com</span>
+                  </div>
+                </td>
+                <td>45</td>
+                <td>Available</td>
+                <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+              </tr>
+
+              <tr>
+                <td>Dr. Alice Johnson</td>
+                <td>Cardiology</td>
+                <td>
+                  <div class="contacts-type">
+                    <span><i class="fa-solid fa-voicemail"></i> (555) 111-2222</span>
+                    <span><i class="fa-regular fa-envelope"></i> alice.j@curex.com</span>
+                  </div>
+                </td>
+                <td>45</td>
+                <td>Available</td>
+                <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+              </tr>
+
+              <tr>
+                <td>Dr. Alice Johnson</td>
+                <td>Cardiology</td>
+                <td>
+                  <div class="contacts-type">
+                    <span><i class="fa-solid fa-voicemail"></i> (555) 111-2222</span>
+                    <span><i class="fa-regular fa-envelope"></i> alice.j@curex.com</span>
+                  </div>
+                </td>
+                <td>45</td>
+                <td>Available</td>
+                <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+              </tr>
+
+              <tr>
+                <td>Dr. Alice Johnson</td>
+                <td>Cardiology</td>
+                <td>
+                  <div class="contacts-type">
+                    <span><i class="fa-solid fa-voicemail"></i> (555) 111-2222</span>
+                    <span><i class="fa-regular fa-envelope"></i> alice.j@curex.com</span>
+                  </div>
+                </td>
+                <td>45</td>
+                <td>Available</td>
+                <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
     </div>
 
     <div class="page-content" id="appointments">
-      <h2>Appointments</h2>
+      <div class="appointment-dash">
+        <div class="appointment_header">
+          <div class="title">
+            <h2>Appointments</h2>
+          </div>
+
+          <button class="schedule_appointment btn "><i class="fa-solid fa-plus"></i> Schedule Appointment</button>
+        </div>
+
+
+
+        <div class="appointments-tables">
+          <div class="doctors-tables__header">
+            <input class="search-doctors" type="text" placeholder=" Search doctors...">
+          </div>
+
+          <table class="doctors-table">
+            <thead>
+              <tr>
+                <th>Patient</th>
+                <th>Doctor</th>
+                <th>Date & Time</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Dr. Alice Johnson</td>
+                <td>Dr. Alice Johnson</td>
+                <td>
+                  <div class="contacts-type">
+                    <span><i class="fa-regular fa-calendar"></i> Nov 18, 2025</span>
+                    <span><i class="fa-regular fa-clock"></i> 09:00 AM</span>
+                  </div>
+                </td>
+                <td>45</td>
+                <td>Available</td>
+                <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+              </tr>
+
+              <tr>
+                <td>Dr. Alice Johnson</td>
+                <td>Dr. Alice Johnson</td>
+                <td>
+                  <div class="contacts-type">
+                    <span><i class="fa-regular fa-calendar"></i> Nov 18, 2025</span>
+                    <span><i class="fa-regular fa-clock"></i> 09:00 AM</span>
+                  </div>
+                </td>
+                <td>45</td>
+                <td>Available</td>
+                <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+              </tr>
+
+              <tr>
+                <td>Dr. Alice Johnson</td>
+                <td>Dr. Alice Johnson</td>
+                <td>
+                  <div class="contacts-type">
+                    <span><i class="fa-regular fa-calendar"></i> Nov 18, 2025</span>
+                    <span><i class="fa-regular fa-clock"></i> 09:00 AM</span>
+                  </div>
+                </td>
+                <td>45</td>
+                <td>Available</td>
+                <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+              </tr>
+
+              <tr>
+                <td>Dr. Alice Johnson</td>
+                <td>Dr. Alice Johnson</td>
+                <td>
+                  <div class="contacts-type">
+                    <span><i class="fa-regular fa-calendar"></i> Nov 18, 2025</span>
+                    <span><i class="fa-regular fa-clock"></i> 09:00 AM</span>
+                  </div>
+                </td>
+                <td>45</td>
+                <td>Available</td>
+                <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+              </tr>
+
+              <tr>
+                <td>Dr. Alice Johnson</td>
+                <td>Dr. Alice Johnson</td>
+                <td>
+                  <div class="contacts-type">
+                    <span><i class="fa-regular fa-calendar"></i> Nov 18, 2025</span>
+                    <span><i class="fa-regular fa-clock"></i> 09:00 AM</span>
+                  </div>
+                </td>
+                <td>45</td>
+                <td>Available</td>
+                <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
     </div>
 

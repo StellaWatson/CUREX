@@ -275,6 +275,69 @@ tr:hover {
 	display: block;
 }
 
+
+
+
+
+/* Doctors section */
+.doctors-dash, .appointment-dash{
+	padding: 30px 40px;
+}
+.doctors_header, .appointment_header{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.add_doctor, .schedule_appointment{
+	background-color: #2980b9 !important;
+	color: #FFFFFF;
+}
+
+
+
+.doctors-tables, .appointments-tables{
+	margin-top: 40px;
+	background-color: #ffffff;
+	padding: 30px 20px;
+	border-radius: 10px;
+}
+
+.doctors-tables__header input {
+	padding: 10px;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	width: 50%;
+	background-color: rgb(249,249,249);
+
+}
+
+
+.doctors-table{
+	margin-top: 20px;
+}
+
+.contacts-type{
+	display: flex;
+	flex-direction: column;
+}
+
+.fa-voicemail{
+	transform: rotate(30deg);
+}
+.fa-ellipsis-vertical{
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
 /* inventory */
 .inventory_header {
 	display: flex;
